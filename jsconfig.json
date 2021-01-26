@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "jsx": "react-native",
+        "moduleResolution": "node",
+        "baseUrl": "./",
+        "paths": {
+            "src": ["./src"],
+            "src/*": ["./src/*"],
+            "ui": ["./src/components/ui"],
+            "styles": ["./src/configs/styles"],
+            "configs": ["./src/configs"],
+            "configs/*": ["./src/configs/*"],
+            "services": ["./src/services"],
+            "services/*": ["./src/services/*"],
+            "modules": ["./src/modules"],
+            "modules/*": ["./src/modules/*"],
+            "components": ["./src/components"],
+            "components/*": ["./src/components/*"],
+            "containers": ["./src/containers"],
+            "containers/*": ["./src/containers/*"]
+        }
+    },
+    "exclude": ["node_modules", "**/node_modules/**"]
+}

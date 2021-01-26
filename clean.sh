@@ -1,0 +1,1 @@
+watchman watch-del-all && rm -rf node_modules/ && yarn cache clean && yarn && cd android && ./gradlew cleanBuildCache
