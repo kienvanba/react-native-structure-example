@@ -18,15 +18,17 @@ In this project, we present our common structure for a `react-native` applicatio
   
 - How is 3rd party api organized?
   
-  3rd party api (ex: payment gateway), is also served as a service in the project like any other services.
+  3rd party api (ex: payment gateway), is also served as a service.
+  Our `server` will handle business logic and comunication. 
+  `Mobile app` just have to make api call just like any other services.
   
 - Does it use Redux?
   
-  Yes
+  Yes. `Redux` is used for managing global states such as `access_token`, `login state`, `business logic state`... `Screens` in the app can listen for states changes and dispatch actions to update `states`
   
 - Does it use assets?
   
-  Yes (images, fonts, ...)
+  Yes. assets such as `fonts`, `images`, `audios` are commonly used. `fonts` and other set-up-assets are usuaslly organized in the root directory of the application, while `images` and `audio` are organized in `src` folder.
   
 - Does it have routing?
   
