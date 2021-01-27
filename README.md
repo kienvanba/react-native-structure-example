@@ -19,8 +19,8 @@ In this project, we present our common structure for a `react-native` applicatio
 - How is 3rd party api organized?
   
   3rd party api (ex: payment gateway), is also served as a service.
-  Our `server` will handle business logic and communication. 
-  `Mobile app` just have to make api call just like any other services.
+  Our `server` will communicate with the `gateway` to handle business logic and ensure data is secured, and then provide an `api` for `mobile app` so it 
+  just have to make api call like any other services.
   
 - Does it use Redux?
   
@@ -32,5 +32,5 @@ In this project, we present our common structure for a `react-native` applicatio
   
 - Does it have routing?
   
-  Yes (reavt-navigation, react-router)
+  Yes (react-navigation, react-router)
   
